@@ -1,5 +1,5 @@
 ## Free TiA
-This project only for Research Purpose Only
+This project for Research Purpose Only. No commercial use.
 	
 ## Motivation
 Reading Premium Article of Tech In Asia is limited. While we want to read just several articles, it will be troublesome for non regular readers. So we create this for you.
