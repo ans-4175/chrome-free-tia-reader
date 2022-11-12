@@ -1,0 +1,1 @@
+alert('Page is not TechInAsia Article');
