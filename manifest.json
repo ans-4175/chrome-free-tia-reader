@@ -8,7 +8,12 @@
     "default_title": "Click to Read TiA",
     "default_icon": "default_icon.png"
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": [
+    "activeTab", "scripting"
+  ],
+  "host_permissions": [
+    "https://freetia-mochfamir.vercel.app/*"
+  ],
   "background": {
     "service_worker": "background.js"
   }
