@@ -5,6 +5,7 @@
 
 	const preProc = url.includes(idTia) ? 'id' : 'en';
 	const freeUrl = `${freeTia}?${preProc}=${url}`;
+	document.getElementsByClassName('paywall-content')[0].innerHTML = '...loading contents...';
 
 	fetch(freeUrl).then((response) => {
 		// The API call was successful!
@@ -15,7 +16,7 @@
 		document.getElementsByClassName('paywall-content')[0].innerHTML = html;
 		document.getElementsByClassName('paywall-content')[0].setAttribute('style', 'all:revert');
 		// paywall premium hide
-		document.getElementById('paywall-premium').setAttribute('style', 'display:none');
+		document.getElementsByClassName('paywall-hard')[0].setAttribute('style', 'display:none');
 	}).catch(function (err) {
 		// There was an error
 		console.warn('Something went wrong.', err);
